@@ -3,10 +3,10 @@
 int main(){
     char codigo1[4], codigo2[4];
     char estado1[20], estado2[20];
-    char nomeCity1[20], nomeCity2[20];
-    float populacao1, populacao2;
+    char cidade1[50], cidade2[50];
     float area1, area2;
     float pib1, pib2;
+    int populacao1, populacao2;
     int pontosturisticos1, pontosturisticos2;
 
     // ESTADO 1
@@ -14,16 +14,16 @@ int main(){
     printf("CARTA 1\n");
 
     printf("Digite o estado: ");
-    scanf("%s", estado1);
+    scanf(" %c", &estado1);
 
     printf("Digite o código da carta (uma letra): ");
-    scanf(" %c", &codigo1[0]);
+    scanf(" %3s", codigo1);
 
-    printf("Digite o nome da cidade: ");
-    scanf("%s", nomeCity1);
-
+    printf("Digite o nome da cidade: "); //solicita o nome da cidade
+    scanf("%49s", cidade1); //lê uma string de até 49 caracteres
+    
     printf("Digite a população: ");
-    scanf("%f", &populacao1);
+    scanf("%d", &populacao1);
 
     printf("Digite a área (km2): ");
     scanf("%f", &area1);
@@ -39,16 +39,16 @@ int main(){
     printf("\nCARTA 2\n");
 
     printf("Digite o estado: ");
-    scanf("%s", estado2);
+    scanf(" %c", &estado2);
 
     printf("Digite o código da carta (uma letra): ");
-    scanf(" %c", &codigo2[0]);
+    scanf(" %3s", codigo2);
 
     printf("Digite o nome da cidade: ");
-    scanf("%s", nomeCity2);
+    scanf("%49s", cidade2); //lê uma string de até 49 caracteres (sem espaço)
 
     printf("Digite a população: ");
-    scanf("%f", &populacao2);
+    scanf("%d", &populacao2);
 
     printf("Digite a área (km2): ");
     scanf("%f", &area2);
@@ -64,4 +64,3 @@ int main(){
     return 0;
 }
 
-     
