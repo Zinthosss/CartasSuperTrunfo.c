@@ -85,11 +85,11 @@ int main(){
     // =========================
 
     printf("\nEscolha o PRIMEIRO atributo:\n");
-    printf("1 - Populacao\n");
-    printf("2 - Area\n");
+    printf("1 - População\n");
+    printf("2 - Área\n");
     printf("3 - PIB\n");
-    printf("4 - Pontos turisticos\n");
-    printf("5 - Densidade demografica\n");
+    printf("4 - Pontos turísticos\n");
+    printf("5 - Densidade demográfica\n");
     scanf("%d", &atributo1);
 
     // =========================
@@ -110,7 +110,7 @@ int main(){
     }
 
     // =========================
-    // ATRIBUTO 1
+    //        ATRIBUTO 1
     // =========================
 
     switch(atributo1){
